@@ -1,0 +1,44 @@
+.gallary{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.gallary img{
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px #0003;
+}
+.img1{
+    animation: slideleft 1.5s ease-in-out;
+}
+.img2{
+    animation: slideright 1.5s ease-in-out;
+}
+@keyframes slideleft{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideright{
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.po{ 
+    font-size: 50px;
+    animation: slideleft 1.7s ease-in-out;
+}
